@@ -1,0 +1,45 @@
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(2,0,36);
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 7%, rgba(7,45,145,1) 48%, rgba(0,212,255,1) 100%);  */
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #FFFFFF;
+  /* background: transparent; */
+  border-radius: 8px;
+  height: 80%;
+  width: 55%;
+}
+
+.emoji-mart {
+  position: absolute;
+  bottom: 27%;
+  right: 43%;
+}
+
+.emoji-mart-preview {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .outerContainer {
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}
